@@ -12,9 +12,9 @@ def change(x):
 		nickels=divmod(dimes[1],5)
 		pennies=divmod(nickels[1],1)
 		if pennies[1]<1:
-			print (quarters[0],dimes[0],nickels[0],nickels[1])
+			return (quarters[0],dimes[0],nickels[0],nickels[1])
 		else:
-			print (quarters[0],dimes[0],nickels[0],pennies[0])
+			return (quarters[0],dimes[0],nickels[0],pennies[0])
 	else :
 				raise ValueError('amount cannot be negative')
 
@@ -27,7 +27,7 @@ def scramble(word):
 def strip_quotes(str):
 	str = str.replace("\'","")
 	str = str.replace("\"","")
-	print str
+	return str
 
 
 def prefixes(str):
@@ -46,17 +46,17 @@ def interleave(list1 = [], list2 = []):
 	for i in zip(list1,list2):
 		full.extend(i)
 	if len(list1)==len(list2):
-		print full
+		return full
 	elif len(list1)>len(list2):
 		keepgoing = full+list1[len(list2):]
-		print keepgoing
+		return keepgoing
 	elif len(list2)>len(list1):
 		keepgoing2 = full+list2[len(list1):]
-		print keepgoing2
+		return keepgoing2
 
 def stutter(list1 = []):
 	result = []
 	for i in zip(list1, list1):
 		result.extend(i)
-	print result
+	return result
 	

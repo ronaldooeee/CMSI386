@@ -46,7 +46,10 @@ exports.powersOfTwo = function (num, f){
 }
 
 exports.prefixes = function(s, f){
-
+    for (i =0; i<=s.length; i++){
+    	f(s);
+    	alert(s[i]);
+    }
 }
 
 exports.interleave = function(left, right){

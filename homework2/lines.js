@@ -1,6 +1,3 @@
-""" Ronald Uy & Edwin Cheung 
-	CMSI 386 - Homework #2 """
-
 var sys = require('sys'),
 	fs = require('fs');
 var filename = process.argv[2];

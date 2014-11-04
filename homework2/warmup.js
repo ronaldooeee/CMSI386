@@ -1,5 +1,3 @@
-""" Ronald Uy & Edwin Cheung 
-	CMSI 386 - Homework #2 """
 
 
 exports.change = function (amount){
@@ -52,7 +50,7 @@ exports.prefixes = function(s, f){
     }
 }
 
-exports.interleave = function(left, right){
+var interleave = exports.interleave = function(left, right){
 	var result = []
 		L1 = 0;
 		R1 = 0;

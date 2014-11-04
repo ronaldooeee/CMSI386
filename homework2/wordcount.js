@@ -1,5 +1,3 @@
-""" Ronald Uy & Edwin Cheung
-	CMSI 386 - Homework #2 """
 
 var list = {};
 process.stdin.on('data',function (input){

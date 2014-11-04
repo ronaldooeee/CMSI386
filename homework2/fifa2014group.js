@@ -1,5 +1,3 @@
-""" Ronald Uy & Edwin Cheung 
-	CMSI 386 - Homework #2 """
 
 
 var request = require("request");

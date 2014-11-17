@@ -2,7 +2,9 @@
 Ronald Uy & Edwin Cheung <br>
 <br>
 #####1) (a = 3) >= m >= ! & 4 * ~ 6 || y %= 7 ^ 6 & p
-	
+ 
+![alt text](https://github.com/ronaldooeee/CMSI386/blob/master/homework3/Abstract%20Syntax%20Tree.JPG)
+		
 
 #####2) 
 	function f(){
@@ -152,8 +154,16 @@ The function **same_fringe** is horrible in efficiency when it comes to computin
 
 	from itertools import izip_longest
 
+	def fringe(tree):
+		for node1 in tree: 
+			if isinstance(node1, tuple):
+				for node2 in fringe(node1):
+					yield node2
+			else:
+				yield node1
+	
 	def same_fringe(tree1, tree2):
-		def fringe(tree):
+		return all(node1 == node2 for node1, node2 in izip_longest(fringe(tree), fringe(tree2)))
 			
 #####9) c) Write an efficient (lazy) version of **same_fringe** in Javascript.
 
